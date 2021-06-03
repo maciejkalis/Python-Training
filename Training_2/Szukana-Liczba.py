@@ -12,20 +12,20 @@ print ("""Zgadnij jaką liczbę mam na myśli.
 Jeśli nie zgadniesz będę Cię naprowadzał.""")
 
 while (i < 1):
-    x = int(input("Podaj liczbę: "))
-    if (x < 118):
+    
+    zgadywanaLiczba = int(input("Podaj liczbę: "))
+    if (zgadywanaLiczba < (szukanaLiczba - 10)):
         print ("Podana przez Ciebie liczba jest za mała! Wybierz jakąś większą!")
 
-    elif (x < 128) and (x >= 118):
+    elif (zgadywanaLiczba < szukanaLiczba) and (zgadywanaLiczba >= (szukanaLiczba - 10)):
         print ("Jesteś już blisko, ale liczba jest wciąż za mała!")
 
-    elif (x > 128) and (x <= 138):
+    elif (zgadywanaLiczba > szukanaLiczba) and (zgadywanaLiczba <= (szukanaLiczba + 10)):
         print ("Jesteś już blisko, ale liczba jest wciąż za duża!")
 
-
-    elif (x > 138):
+    elif (zgadywanaLiczba > (szukanaLiczba + 10)):
         print ("Podana przez Ciebie liczba jest za duża! Wybierz jakąś mniejszą!")
 
     else:
-        print ("Brawo miałem na myśli liczbę", szukanaLiczba, "Liczba została odgadnięta!")
+        print ("Brawo miałem na myśli liczbę", szukanaLiczba, "- liczba została odgadnięta!")
         i += 1
