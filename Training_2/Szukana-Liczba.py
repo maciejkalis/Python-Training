@@ -29,3 +29,52 @@ while (i < 1):
     else:
         print ("Brawo miałem na myśli liczbę", szukanaLiczba, "- liczba została odgadnięta!")
         i += 1
+
+"""
+Altrenatywny program.
+
+"""
+"""
+x = 56 #Szukana Liczba
+
+y = 0 #Zgadywana Liczba
+
+while y != x:
+    y = int(input("Podaj liczbę: "))
+    if (y < (x - 10)):
+        print ("Za mała! Wybierz jakąś większą!")
+
+    elif (y < x) and (y >= (x - 10)):
+        print ("Już blisko, ale liczba jest wciąż za mała!")
+
+    elif (y > x) and (y <= (x + 10)):
+        print ("Jesteś już blisko, ale liczba jest wciąż za duża!")
+
+    elif (y > (x + 10)):
+        print ("Za duża! Wybierz jakąś mniejszą!")
+
+    else:
+        print ("Brawo, to ta liczba!")
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
