@@ -1,5 +1,5 @@
 """
-Napisz program, który pozwoli użytkownikowi:
+Program, który pozwoli użytkownikowi:
 1) Dodawać nowe definicje
 2) Szukać istniejących definicji
 3) Usuwać wybrane przez niego definicje
