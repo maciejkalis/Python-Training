@@ -18,6 +18,7 @@ D - Dodanie nowej definicji do słownika,
 U - Usunięcie wybranej pozycji ze słownika,
 W - Wyszukiwanie haseł.
 S - Wyświetl aktualny stan słownika.
+Z - Zakończ program
 Wybierz operację: """))
     
     if dzialanie == 'D' or dzialanie == 'd':
@@ -85,3 +86,15 @@ Wybierz działanie: """)
             print (key, '-', slownik[key])
             print()
 
+    elif dzialanie == 'Z' or dzialanie == 'z':
+        print()
+        print ('Zakończono program.')
+        break
+
+    else:
+        print()
+        print ('Nie dokonałeś poprawnego wyboru.')
+        print()
+        
+        
+        
