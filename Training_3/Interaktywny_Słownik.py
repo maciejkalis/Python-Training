@@ -21,58 +21,36 @@ S - Wyświetl aktualny stan słownika.
 Wybierz operację: """))
     
     if dzialanie == 'D' or dzialanie == 'd':
-
-        print ()
-        
-        hasloDodawane = input ('Podaj nowe hasło do słownika: ')
-        
-        definicja = input ('Utwórz definicję do podanego hasła: ')
-        
+        print ()        
+        hasloDodawane = input ('Podaj nowe hasło do słownika: ')        
+        definicja = input ('Utwórz definicję do podanego hasła: ')        
         slownik.update ({hasloDodawane: definicja})
-
         print ('\n')
-
         print('Dodano następujące hasło wraz z definicją:', hasloDodawane, '-', definicja)
-
         print ('\n')
 
-    elif dzialanie == 'U' or dzialanie == 'u':
-        
-        print ('\n')
-        
+    elif dzialanie == 'U' or dzialanie == 'u':        
+        print ('\n')        
         hasloUsuwane = input ('Podaj hasło jakie chcesz usunąć ze słownika: ')
 
-        if hasloUsuwane in slownik:
-                               
+        if hasloUsuwane in slownik:                               
             del (slownik[hasloUsuwane])
-
             print ('\n')
-
             print('Usunięto hasło:', hasloUsuwane)
-
             print ('\n')
 
         else:
-
             print ('\n')
-
             print('Podanego hasła nie ma w słowniku')
-
-            print ('\n')
-            
+            print ('\n')            
 
     elif dzialanie == 'W' or dzialanie == 'w':
-
-        print ('\n')
-        
+        print ('\n')        
         hasloWyszukiwane = input ('Wyszukaj hasło: ')
         
         if hasloWyszukiwane in slownik:
-
-            print ('\n')
-            
+            print ('\n')            
             print(hasloWyszukiwane, '-', slownik.get(hasloWyszukiwane))
-
             print ('\n')
         
         else:
@@ -82,44 +60,28 @@ T - Tak, N - Nie
 Wybierz działanie: """)
             
             if dodanieHaslaWybor == 'T' or dodanieHaslaWybor == 't':
-
-                definicja2 = input ('Utwórz definicję do podanego hasła: ')
-            
-                slownik.update ({hasloWyszukiwane: definicja2})
-                
-                print ('\n')
-            
+                definicja2 = input ('Utwórz definicję do podanego hasła: ')            
+                slownik.update ({hasloWyszukiwane: definicja2})                
+                print ('\n')            
                 print('Dodano następujące hasło wraz z definicją:', hasloWyszukiwane, '-', slownik[hasloWyszukiwane])
-
                 print ('\n')
 
-            elif dodanieHaslaWybor == 'N' or dodanieHaslaWybor == 'n':
-                
-                print ('\n')
-                
+            elif dodanieHaslaWybor == 'N' or dodanieHaslaWybor == 'n':                
+                print ('\n')                
                 print('W porządku, powracamy do menu głównego')
-
                 print ('\n')
 
             else:
-                print ('\n')
-                
+                print ('\n')                
                 print('Nie dokonałeś poprawnego wyboru. Powracamy do menu głównego')
-
                 print ('\n')
-
 
     elif dzialanie == 'S' or dzialanie == 's':
-
         print()
-
         print ('W słowniku znajdują się następujące hasła:')
         
         for key in slownik:
-
-            print()
-                       
+            print()                       
             print (key, '-', slownik[key])
-
             print()
 
