@@ -56,12 +56,3 @@ elif jakaFigura == "koło":
 
 else:
     print ("Nie wybrałeś odpowiedniej figury")
-
-
-
-
-
-
-
-
-    
