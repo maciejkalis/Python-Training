@@ -57,24 +57,3 @@ while y != x:
         print ("Brawo, to ta liczba!")
 
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
