@@ -14,7 +14,7 @@ if jakaFigura == "prostokąt":
     a = int(input("Podaj długość pierwszego boku prostokąta: ")) 
     b = int(input("Podaj długość drugiego boku prostokąta: "))
 
-    print ("Pole prostokąta to:", Figury.pole_prostokąta (a, b), "j^2")
+    print ("Pole prostokąta to:", Figury.pole_prostokata (a, b), "j^2")
 
 elif jakaFigura == "kwadrat":
     a = int(input("Podaj długość boku kwadratu: ")) 
@@ -25,7 +25,7 @@ elif jakaFigura == "trójkąt":
     a = int(input("Podaj długość podstawy trójkąta: ")) 
     h = int(input("Podaj wysokość trójkąta: "))
     
-    print ("Pole trójkąta to:", Figury.pole_trójkąta (a, h), "j^2")
+    print ("Pole trójkąta to:", Figury.pole_trojkata (a, h), "j^2")
 
 elif jakaFigura == "trapez":
     a = int(input("Podaj długość dłuższej podstawy trapezu: "))
@@ -37,11 +37,7 @@ elif jakaFigura == "trapez":
 elif jakaFigura == "koło":
     r = int(input("Podaj promień koła: ")) 
     
-    print ("Pole koła to:", Figury.pole_koła (r), "j^2")
+    print ("Pole koła to:", Figury.pole_kola (r), "j^2")
 
 else:
     print ("Nie wybrałeś odpowiedniej figury")
-<<<<<<< HEAD:Training_4/Program_liczący_powierzchnię_figur.py
-
-=======
->>>>>>> 4cf27e7442d82b872966a2f6848212f8a3404102:Training_4/Program_liczacy_powierzchnie_figur.py
