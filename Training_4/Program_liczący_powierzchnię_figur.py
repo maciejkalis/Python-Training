@@ -41,4 +41,7 @@ elif jakaFigura == "koło":
 
 else:
     print ("Nie wybrałeś odpowiedniej figury")
+<<<<<<< HEAD:Training_4/Program_liczący_powierzchnię_figur.py
 
+=======
+>>>>>>> 4cf27e7442d82b872966a2f6848212f8a3404102:Training_4/Program_liczacy_powierzchnie_figur.py
